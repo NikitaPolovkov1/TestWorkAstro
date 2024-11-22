@@ -1,0 +1,128 @@
+---
+import menuData from "../config/menu.json";
+---
+
+<header>
+  <nav class="headerNavigation">
+    <div class="logo">
+      <a href="/">
+        <img src="/assets/images/logo.png" alt="" width="40px" />
+      </a>
+    </div>
+    <ul>
+      {
+        menuData.main.map((item) => (
+          <li>
+            <a href={item.url}>{item.name}</a>
+          </li>
+        ))
+      }
+    </ul>
+    <div class="buttonGroup">
+      <button class="loginButton">Login</button>
+      <button class="burgerButton" onclick="toggleMenu()">
+        <img
+          class="burgerImage"
+          src="/public/assets/images/burger.png"
+          alt="Menu"
+        />
+        <img
+          class="closeImage"
+          src="/public/assets/images/close.png"
+          alt="Close"
+        />
+      </button>
+    </div>
+  </nav>
+</header>
+
+<style lang="scss">
+  header {
+    width: 100%;
+    border-radius: 0px 0px 30px 30px;
+    padding: 10px 0px;
+    backdrop-filter: blur(30px);
+    box-shadow: 0px 0px 10px 0px #00000033;
+    box-shadow: 0px 0px 10px 0px #ffffff40 inset;
+    box-shadow: 0px 4px 4px 0px #ffffff4d inset;
+    box-shadow: 0px 2px 6px 0px #0000004d;
+    background: #00000066;
+  }
+
+  .headerNavigation {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    ul {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      list-style: none;
+
+      li {
+        a {
+          text-decoration: none;
+          color: #fff;
+          font-size: 16px;
+          font-weight: 700;
+        }
+      }
+    }
+
+    .buttonGroup {
+      .loginButton {
+        padding: 10px 50px;
+        background-color: #fff;
+        border-radius: 30px;
+        color: #000;
+        border: none;
+        font-size: 16px;
+        font-weight: 700;
+      }
+      .burgerButton {
+        display: none;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    header {
+      padding: 10px 16px;
+    }
+  }
+
+  @media screen and (max-width: 820px) {
+    header {
+      nav {
+        ul {
+          display: none;
+        }
+
+        .buttonGroup {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+
+          .burgerButton {
+            background-color: #fff;
+            border-radius: 50%;
+            width: 35px;
+            height: 35px;
+            border: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .closeImage {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+</style>

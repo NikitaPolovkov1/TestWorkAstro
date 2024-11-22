@@ -1,0 +1,62 @@
+{
+  "main": [
+    {
+      "name": "Pricing",
+      "url": "/price"
+    },        
+    {
+      "name": "Blog",
+      "url": "/blog"
+    },
+    {
+      "name": "About us",
+      "url": "/about"
+    },
+    {
+      "name": "Privacy Policy",
+      "url": "/about/privacy/en"
+    },
+    {
+      "name": "Terms of use",
+      "url": "/about/terms-of-use/en"
+    },
+    {
+      "name": "Refund Policy",
+      "url": "/about/refund-policy/en"
+    }
+  ],
+
+  "footer": {
+    "rows": [
+      {
+        "name": "About us",
+        "url": "/about"
+      },
+      {
+        "name": "Blog",
+        "url": "/blog"
+      },
+      {
+        "name": "Pricing",
+        "url": "/price"
+      },        
+      {
+        "name": "Faq",
+        "url": "/faq/en"
+      },        
+      {
+        "name": "Privacy Policy",
+        "url": "/about/privacy/en"
+      },
+      {
+        "name": "Terms of use",
+        "url": "/about/terms-of-use/en"
+      },
+      {
+        "name": "Refund Policy",
+        "url": "/about/refund-policy/en"
+      }
+    ],
+    "columns": false
+  }
+}

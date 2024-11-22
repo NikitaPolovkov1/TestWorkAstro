@@ -1,0 +1,172 @@
+---
+import menuData from "../config/menu.json";
+import socialData from "../config/social.json";
+import configData from "../config/config.json";
+
+const year = new Date().getFullYear();
+---
+
+<footer>
+  <div class="footerColumns">
+    <div class="column">
+      <ul>
+        <li class="columnTitle">Pages</li>
+        {
+          menuData.footer.rows.map((item) => (
+            <li>
+              <a href={item.url}>{item.name}</a>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+    <div class="column">
+      <ul>
+        <li class="columnTitle">Pages</li>
+        {
+          menuData.footer.rows.map((item) => (
+            <li>
+              <a href={item.url}>{item.name}</a>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+    <div class="column">
+      <ul>
+        <li class="columnTitle">Pages</li>
+        {
+          menuData.footer.rows.map((item) => (
+            <li>
+              <a href={item.url}>{item.name}</a>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+    <div class="column socialColumn">
+      <a href="mailto: {socialData.email}" class="columnSocialTitle"
+        >{socialData.email}</a
+      >
+      <a href="{socialData.facebook}" class="facebookLink">
+        <img src="/public/assets/images/logo-fb.png" alt="" />
+      </a>
+    </div>
+  </div>
+  <div class="footerRow">
+    <a href="mailto:{socialData.email}" class="emailLink">{socialData.email}</a>
+    <div class="copyRight">{year} {configData.params.copyright}</div>
+  </div>
+</footer>
+
+<style>
+  footer {
+    width: 100%;
+    backdrop-filter: blur(30px);
+    box-shadow: 0px 0px 10px 0px #00000033;
+    box-shadow: 0px 0px 10px 0px #ffffff40 inset;
+    box-shadow: 0px 4px 4px 0px #ffffff4d inset;
+    box-shadow: 0px 2px 6px 0px #0000004d;
+    background: #00000066;
+    border-radius: 30px 30px 0px 0px;
+    margin-top: 100px;
+    padding: 40px 0px;
+
+    @media (max-width: 578px) {
+      margin-top: 40px;
+    }
+
+    .footerColumns {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 100px;
+
+      @media (max-width: 578px) {
+        gap: 40px;
+        padding: 0px 16px;
+      }
+
+      .column {
+        @media (max-width: 578px) {
+          padding: 0px;
+        }
+        ul {
+          list-style: none;
+          li {
+            margin-bottom: 5.5px;
+            font-family: Arial;
+            font-weight: 400;
+            a {
+              color: #fff;
+            }
+          }
+
+          .columnTitle {
+            color: #fff;
+            font-size: 16px;
+            line-height: 24px;
+            margin-bottom: 18px;
+            font-family: Arial;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+
+    .socialColumn {
+      padding: 0;
+      a {
+        display: block;
+        color: #fff;
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 18px;
+        font-family: Arial;
+        font-weight: 700;
+        margin-left: 16px;
+
+        @media (max-width: 578px) {
+          margin-left: 0px;
+        }
+      }
+
+      .facebookLink {
+        width: fit-content;
+        margin: 0;
+      }
+    }
+
+    .footerRow {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+
+      @media (max-width: 578px) {
+        justify-content: center;
+      }
+
+      .emailLink,
+      .copyRight {
+        color: #fff;
+        font-size: 18px;
+        font-weight: 400;
+
+        @media (max-width: 578px) {
+          font-size: 14px;
+        }
+      }
+
+      .emailLink {
+        @media (max-width: 578px) {
+          display: none;
+        }
+      }
+    }
+  }
+</style>

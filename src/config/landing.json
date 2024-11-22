@@ -1,0 +1,35 @@
+{
+  "price": {
+    "layout": "1"
+  },
+  "popup": {
+    "title": "Get the Online Course Right Now!",
+    "checkbox": {
+      "text1": "I accept the",
+      "text2": "and",
+      "termsOfUse": "terms of use",
+      "privacy": "privacy policy",
+      "refund": "refund policy"
+    },
+    "submit": "Next"
+  },
+  "header": {
+    "template": "1"
+  },
+  "footer": {
+    "addTemplate": true,
+    "typeTemplate": "rows"
+  },
+  "postTemplate": {
+    "template": "1"
+  },
+  "postCard": {
+    "template": "1"
+  },
+  "reviews": {
+    "template": ""
+  },
+  "quiz": {
+    "template": "1"
+  }
+}

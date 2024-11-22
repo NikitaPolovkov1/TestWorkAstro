@@ -1,0 +1,60 @@
+---
+import Layout from "../layouts/Layout.astro";
+import BlogItem from "../components/BlogItem.astro";
+
+const blogData = {
+  blogItems: [
+    {
+      title: "Mindful Mornings: A Key to Wellness",
+      subtitle:
+        "Explore how starting your day with mindfulness can transform your overall well-being.",
+      image: "/public/assets/images/Blog1.png",
+    },
+    {
+      title: "Fueling Fitness: Nutrition Essentials",
+      subtitle:
+        "Discover the vital link between nutrition and fitness, and how to fuel your body for optimal performance.",
+      image: "/public/assets/images/Blog2.png",
+    },
+    {
+      title: "Mindful Mornings: A Key to Wellness",
+      subtitle:
+        "Learn how small, consistent habits can lead to significant, lasting changes in your personal and professional life.",
+      image: "/public/assets/images/Blog3.png",
+    },
+  ],
+};
+---
+
+<Layout title="Blog" description="Blog" language="siteConfig.site.lang">
+  <section class="blogSection">
+    {
+      blogData.blogItems.map((post) => (
+        <BlogItem
+          title={post.title}
+          subtitle={post.subtitle}
+          imagePath={post.image}
+        />
+      ))
+    }
+  </section>
+</Layout>
+
+<style>
+  .blogSection {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 40px;
+  }
+
+  @media screen and (max-width: 1200px) {
+    .blogSection {
+      padding: 0px 16px;
+      justify-content: center;
+    }
+  }
+</style>

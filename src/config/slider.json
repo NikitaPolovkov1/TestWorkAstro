@@ -1,0 +1,20 @@
+{
+  "slides": [
+    {
+      "icoPath": "/assets/ico/basketball.svg",
+      "bgPath": "/assets/img/ImgAbout1_1.png"
+    },
+    {
+      "icoPath": "/assets/ico/carrot.svg",
+      "bgPath": "/assets/img/ImgAbout2_1.png"
+    },
+    {
+      "icoPath": "/assets/ico/brain.svg",
+      "bgPath": "/assets/img/ImgAbout3_1.png"
+    },
+    {
+      "icoPath": "/assets/ico/case.svg",
+      "bgPath": "/assets/img/ImgAbout4_1.png"
+    }
+  ]
+}

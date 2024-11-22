@@ -1,0 +1,120 @@
+<section class="wrapperSection">
+  <div class="wrapperContent">
+    <h1>Beyond Limits</h1>
+    <p>
+      At FitnHub.co, we believe in a holistic approach to personal development.
+      Our platform offers an extensive range of courses designed to enhance
+      every aspect of your being. From physical fitness to mental well-being,
+      skill acquisition to spiritual exploration, we've got you covered.
+    </p>
+    <button class="exploreCoursesButton">Explore Our Courses</button>
+  </div>
+  <img class="wrapperImage" src="/public/assets/images/wrapper.png" alt="" />
+</section>
+
+<style lang="scss">
+  .wrapperSection {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 80px 60px;
+    border-radius: 50px;
+    backdrop-filter: blur(30px);
+    box-shadow: 0px 0px 10px 0px #00000033;
+    box-shadow: 0px 0px 10px 0px #ffffff40 inset;
+    box-shadow: 0px 4px 4px 0px #ffffff4d inset;
+    box-shadow: 0px 2px 6px 0px #0000004d;
+    background: #00000066;
+    position: relative;
+
+    .wrapperContent {
+      position: relative;
+      z-index: 1;
+      h1 {
+        font-size: 120px;
+        font-weight: 700;
+        font-style: italic;
+        color: #fff;
+        max-width: 428px;
+        line-height: 108px;
+      }
+
+      p {
+        max-width: 335px;
+        color: #fff;
+        font-size: 18px;
+        line-height: 21.6px;
+        margin-top: 54px;
+      }
+
+      .exploreCoursesButton {
+        padding: 10px 60px;
+        border-radius: 75px;
+        border: none;
+        color: #000;
+        background: #fff;
+        font-size: 22px;
+        font-weight: 700;
+        margin-top: 88px;
+      }
+    }
+
+    .wrapperImage {
+      position: absolute;
+      z-index: 2;
+      bottom: 0;
+      right: 0;
+      border-radius: 0px 0px 50px 0px;
+      max-width: 100%;
+      height: auto;
+
+      @media (max-width: 1200px) {
+        max-width: 60%;
+      }
+
+      @media (max-width: 768px) {
+        margin: 14px auto;
+        max-width: 100%;
+        bottom: -16px;
+        border-radius: 0px 0px 50px 50px;
+      }
+    }
+  }
+
+  @media (max-width: 1200px) {
+    .wrapperSection {
+      margin: 16px 0px;
+      width: calc(100% - 32px);
+    }
+  }
+  @media (max-width: 900px) {
+    .wrapperSection {
+      margin: 20px auto;
+      width: calc(100% - 32px);
+      padding: 40px 30px;
+      border-radius: 50px;
+      height: 100%;
+      min-height: 621px;
+
+      .wrapperContent {
+        h1 {
+          font-size: 40px;
+          line-height: 36px;
+        }
+
+        p {
+          margin-top: 20px;
+          font-size: 14px;
+        }
+
+        .exploreCoursesButton {
+          margin-top: 20px;
+          font-size: 22px;
+          padding: 10px 20px;
+          width: 100%;
+        }
+      }
+    }
+  }
+</style>

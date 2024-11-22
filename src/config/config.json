@@ -1,0 +1,79 @@
+{
+  "site": {
+    "title": "Optimal Fitness Hub",
+    "base_url": "https://domain.com",
+    "base_path": "/",
+    "trailing_slash": false,
+    "favicon": "/favicon.svg",
+    "logo": "/assets/logo/logo.png",
+    "lang": "en"
+  },
+  
+  "legal_information": {
+    "COMPANY": "LTD",
+    "COMPANY_SHORT": "LTD",
+    "INN": "1111111",
+    "ADDRESS": "domain.com",
+    "LINK_OFFER": "/about/terms-of-use/en",
+    "POSTGRESQL": true,
+    "PROCESSING_PAYWALL_SUBDOMAIN": "checkout",
+    "PROCESSING_TRIAL_PRODUCT": "",
+    "PROCESSING_OFFER_PRODUCT": "&productId=3",
+    "PROCESSING_REOFFER_PRODUCT": "&productId=",
+    "BASE_URL": "domain.com"
+  },
+  
+  "chatra": {
+    "ChatraID": "key",
+    "ChatraGroupID": "key"
+  },
+
+  "settings": {
+    "pagination": 4,
+    "summary_length": 200,
+    "blog_folder": "blog",
+    "policy_folder": "company-policy"
+  },
+
+  "buttons": {
+    "quiz_1": {
+      "enable": true,
+      "label": "Take a QUIZ",
+      "label_2": "Get started now!",
+      "link": "/quiz-with-genders/step-gender"
+    },
+    "quiz_2": {
+      "enable": true,
+      "label": "quiz",
+      "label_2": "Get started now!",
+      "link": "/quiz-with-genders/step-gender2"
+    },
+    "support": {
+      "enable": true,
+      "label": "Support",
+      "link": "mailto:support@domain.com"
+    },
+    "login": {
+      "enable": true,
+      "label": "Login",
+      "link": "https://domain.com/my"
+    },
+    "backToBlog": {
+      "enable": true,
+      "label": "Return to Blog",
+      "link": "/blog"
+    }
+  },
+
+  "params": {
+    "contact_form_action": "",
+    "tag_manager_id": "",
+    "copyright": "© All rights reserved"
+  },
+
+  "metadata": {
+    "meta_author": "domain.com",
+    "meta_image": "/favicon.svg",
+    "meta_description": "Fed up with the lethargy, lack of drive, and feeling unfit? Desire to start each day brimming with vitality, prepared to take on any challenge? Introducing domain.com!"
+  }
+}
